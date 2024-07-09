@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create main revenue breakdown chart
     createPieChart(revenueBreakdown);
 
-    // Create other breakdown charts (you would need to define data for these)
+    // Create other breakdown charts
     const paymentsBreakdown = [
         { name: 'Card Interchange', value: 340.3, color: '#260987' },
         { name: 'ATM Fees', value: 97.2, color: '#1cc7c5' },
@@ -36,5 +36,23 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
     createPieChart(paymentsBreakdown, 'payments-chart');
 
-    // Add similar calls for other breakdown charts
+    const fxWealthBreakdown = [
+        { name: 'Foreign Exchange', value: 197.3, color: '#260987' },
+        { name: 'Crypto Trading', value: 98.6, color: '#1cc7c5' },
+        { name: 'Stocks & Commodities', value: 98.6, color: '#4834d4' }
+    ];
+    createPieChart(fxWealthBreakdown, 'fx-wealth-chart');
+
+    const subscriptionsBreakdown = [
+        { name: 'Plus', value: 97.4, color: '#260987' },
+        { name: 'Premium', value: 97.4, color: '#1cc7c5' },
+        { name: 'Metal', value: 48.8, color: '#4834d4' }
+    ];
+    createPieChart(subscriptionsBreakdown, 'subscriptions-chart');
+
+    const interestIncomeBreakdown = [
+        { name: 'Customer Loans', value: 36.1, color: '#260987' },
+        { name: 'Treasury Investments', value: 463.5, color: '#1cc7c5' }
+    ];
+    createPieChart(interestIncomeBreakdown, 'interest-chart');
 });
