@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolut Financial Dashboard 2023</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Revolut Financial Dashboard 2023</h1>
+        
+        <div class="chart-container">
+            <div class="chart">
+                <h2>Revenue Growth</h2>
+                <div class="bar-chart">
+                    <div class="bar" style="height: 51%;" data-value="922.5">
+                        <span>2022: £922.5M</span>
+                    </div>
+                    <div class="bar" style="height: 100%;" data-value="1797.9">
+                        <span>2023: £1797.9M</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chart">
+                <h2>2023 Revenue Breakdown</h2>
+                <div class="pie-chart">
+                    <!-- Pie chart segments will be added here by JavaScript -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="breakdown-charts">
+            <div class="chart">
+                <h2>Payments Breakdown</h2>
+                <div class="pie-chart" id="payments-chart"></div>
+            </div>
+            <div class="chart">
+                <h2>FX, Wealth & Crypto Breakdown</h2>
+                <div class="pie-chart" id="fx-wealth-chart"></div>
+            </div>
+            <div class="chart">
+                <h2>Subscriptions Breakdown</h2>
+                <div class="pie-chart" id="subscriptions-chart"></div>
+            </div>
+            <div class="chart">
+                <h2>Interest Income Breakdown</h2>
+                <div class="pie-chart" id="interest-chart"></div>
+            </div>
+        </div>
+        
+        <div class="kpi-container">
+            <div class="kpi-card">
+                <h3>Total Customers</h3>
+                <p class="kpi-value">38.0M</p>
+                <p class="kpi-subtext">45% increase from 2022</p>
+            </div>
+            <div class="kpi-card">
+                <h3>Monthly Active Customers</h3>
+                <p class="kpi-value">TBD*</p>
+                <p class="kpi-subtext">47% increase from 2022</p>
+            </div>
+            <div class="kpi-card">
+                <h3>Net Profit</h3>
+                <p class="kpi-value">£344.1M</p>
+                <p class="kpi-subtext">vs £5.8M in 2022</p>
+            </div>
+            <div class="kpi-card">
+                <h3>Gross Profit Margin</h3>
+                <p class="kpi-value">76%</p>
+                <p class="kpi-subtext">vs 70% in 2022</p>
+            </div>
+            <div class="kpi-card">
+                <h3>Total Customer Balances</h3>
+                <p class="kpi-value">£18.2B</p>
+                <p class="kpi-subtext">38% increase from 2022</p>
+            </div>
+        </div>
+        
+        <p class="footnote">* Exact number not provided in the report</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
